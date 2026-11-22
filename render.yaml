@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-helpdesk
+    runtime: python
+    plan: free
+    buildCommand: pip install scikit-learn numpy
+    startCommand: python server.py $PORT
+    envVars:
+      - key: HELPDESK_SECRET
+        generateValue: true

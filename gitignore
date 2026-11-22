@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+helpdesk.db
+helpdesk.db-journal
+uploads/
+feedback_report.csv
+.venv/
